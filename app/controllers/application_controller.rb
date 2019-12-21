@@ -19,7 +19,6 @@ class ApplicationController < Sinatra::Base
 
   post "/signup" do
     user = User.new(params)
-    binding.pry
     if user.save
       redirect to "/login"
     else
