@@ -14,6 +14,7 @@ class ApplicationController < Sinatra::Base
 
   get "/signup" do
     erb :signup
+    binding.pry
   end
 
   post "/signup" do
