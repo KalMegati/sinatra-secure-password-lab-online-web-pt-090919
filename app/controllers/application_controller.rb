@@ -17,7 +17,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/signup" do
-    binding.pry
     user = User.new(params)
     if !!user.save and user.username.length > 0
       redirect to "/login"
