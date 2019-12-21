@@ -17,7 +17,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/signup" do
-    #your code here
+    
+    
+    if
+      redirect to "/login"
+    else
+      redirect to "/failure"
+    end
 
   end
 
