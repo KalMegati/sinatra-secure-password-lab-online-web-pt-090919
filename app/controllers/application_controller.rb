@@ -36,7 +36,12 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    ##your code here
+    binding.pry
+    
+    if false
+    else
+      erb :failure
+    end
   end
 
   get "/failure" do
