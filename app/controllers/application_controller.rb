@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    binding.pry
+    user = User.find_by(:username => params[:username])
     
     if false
     else
