@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    #binding.pry
+    binding.pry
     
     if false
     else
