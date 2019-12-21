@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
     
     if false
     else
-      erb :failure
+      redirect "/failure"
     end
   end
 
